@@ -3,12 +3,13 @@ require 'logger'
 require 'active_support/core_ext/string/filters'
 require 'digest/sha2'
 require 'twitter'
+require 'json'
 
 class Whisper
   attr_reader :name, :version, :url, :info
 
   def initialize(hash)
-    @hash = @hash
+    @hash = hash
     ###
     @name    = @hash['name']
     @version = @hash['version']
