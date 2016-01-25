@@ -2,6 +2,7 @@ require 'sinatra'
 require 'logger'
 require 'active_support/core_ext/string/filters'
 require 'digest/sha2'
+require 'twitter'
 
 class Whisper
   attr_reader :name, :version, :url, :info
